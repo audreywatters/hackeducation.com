@@ -1,95 +1,18 @@
 ---
 layout: default
 ---
-
-<div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
-        Teaser Image
-    </div>
-</div>
-
-<header class="blog-header">
-    {% if site.logo %}
-      <a class="blog-logo" href="{{site.url}}" style="background-image: url('{{ site.logo }}')">{{ site.title }}</a>
-    {% endif %}
-    <h1 class="blog-title">{{ site.title }}</h1>
-    <h2 class="blog-description">{{ site.description }}</h2>
-    <div class="custom-links">
-      {% for social in site.social %}
-        {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}">
-              <i class="fa fa-{{ social.icon }}"></i>
-            </a>
-            &nbsp;&nbsp;·&nbsp;&nbsp;
-        {% endif %}
-      {% endfor %}
-      <a href="/about/">About</a>
-    </div>
-</header>
-
-
-<main class="content" role="main">
-
-    {% if site.tags.featured %}
-    <h5 class="index-headline featured"><span>Featured</span></h5>
-
-    <div class="container featured">
-      {% for post in site.tags.featured %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-            </div>
-          <div>
-        </article>
-      {% endfor %}
-    </div>
-
-    <h5 class="index-headline normal"><span>Regular</span></h5>
-    {% endif %}
-
-    <div class="cf frame">
-      {% for post in paginator.posts %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-            </div>
-          <div>
-        </article>
-      {% endfor %}
-    </div>
-
-    <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href="/">Newer posts &rarr;</a>
-        {% else %}
-          <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-        {% endif %}
-      {% endif %}
-    </nav>
-
-
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
-
-</main>
+<p>I am an education writer, a recovering academic, a serial dropout, a rabble-rouser, and some days, ed-tech's Cassandra.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/hackedu/shark575.png" alt="" /></p>
+<p>&ldquo;It&rsquo;s a long story,&rdquo; I often say. You can catch snippets of it, if you pay attention. I&rsquo;ve got a&nbsp;<a href="http://audreywatters.com/cv/cv.html">CV</a>&nbsp;if you&rsquo;re the type that cares about that sort of thing.</p>
+<p>I&rsquo;m a lit geek and a beer snob. I love tattoos and, some days, I like technology. I loathe mushy foods and romantic comedies. I&rsquo;m not ashamed to admit I like ABBA and dislike Tolkien. I am somewhat ashamed to admit I&rsquo;ve not finished <em>Ulysses</em>. I prefer cake to pie, unless we're talking pastry projectiles. I pick fights on the Internet. I&rsquo;m a high school dropout and a PhD dropout. I have a Master's degree in Folklore and was once considered the academic expert on political pie-throwing. I was (I am?) a widow. I'm a mom. I have a cold hard stare that I like to imagine is much like Paddington Bear&rsquo;s and a smirk much like the Cheshire Cat&rsquo;s.</p>
+<p>I travel as much as I possibly can. &ldquo;Home,&rdquo; at least according to my driver&rsquo;s license, is Hermosa Beach, California.</p>
+<p>Way back in junior high, I took an aptitude test that gave me a single career option:&nbsp;<a href="https://plus.google.com/108741250435676131889?rel=author">freelance writer</a>. &nbsp;I remember feeling rather panicky at the time, wondering how the hell I&rsquo;d manage to pull it off. But now I do.</p>
+<p>My essays have appeared in multiple places, but mostly I write on my blog <a href="http://hackeducation.com">Hack Education</a>. I've published a collection of my public talks, <em>The Monsters of Education Technology</em>, and I'm in the middle of writing my next two books,<em> <a href="http://teachingmachin.es">Teaching Machines</a></em> and <em>Reclaim Your Domain</em>, both due out in 2015.</p>
+<p>In my spare time, I read, rabble-rouse, drink beer, and prepare for the zombie apocalypse. Because you never know&hellip;</p>
+<h2>About Hack Education</h2>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/hackedu/didak.png" alt="" /></p>
+<p>I created <a href="http://hackeducation.com">Hack Education</a> in June 2010 shortly after I became a technology journalist. I was frustrated by the lack of coverage of education technology -- by both technology and education publications. I did my day job (that is, the freelance writing I got paid for) but devoted as much attention as possible to Hack Education, trying to create the sort of publication that I'd want to read: one that's smart and snarky, one that's free of advertising and investor influence (See:&nbsp;<a href="http://www.audreywatters.com/disclosures/">Disclosures</a>), one that's tracking new technologies but not just because of some hyperbolic "revolution."</p>
+<p>Hack Education isn't simple about how ed-tech changes "the system." It is about the future of learning. &nbsp;(Yes, there's a distinction there.)</p>
+<p>To &ldquo;hack&rdquo; can mean a lot of things: To break in and break down. To cut to the core. &nbsp;To chop roughly. To be playful and clever. To be mediocre. To solve a problem, but to do so rather inelegantly. To pull systems apart. &nbsp;To "MacGyver" things back together. To re-code. To rebuild. To &ldquo;Hack Education,&rdquo; in turn, can have multiple interpretations, I recognize: a technological solution, a technology intrusion, a technological possibility, a technological disaster.</p>
+<p>To "Hack Education" isn't something that just technologists should do or care about. Nor is this just a concern for teachers, administrators, parents, or students. We all should weigh the implications of technology on how we teach and learn.</p>
+<p style="text-align: right;"><em>Image credits: <a href="https://secure.flickr.com/photos/cogdog/10295189744">Alan Levine</a>, <a href="http://books.google.com/books?id=ldsDAAAAMBAJ&amp;lpg=PA156&amp;dq=Didak%20501%20popular%20mechanics&amp;pg=PP1#v=onepage&amp;q=Didak%20501%20popular%20mechanics&amp;f=false">Popular Science</a>; Updated December 2014</em></p>
