@@ -3,16 +3,16 @@ markdown: redcarpet
 highlighter: pygments
 
 # Site settings
-title: "Audrey Watters"
+title: "Hack Education"
 description: > # this means to ignore newlines until "email:"
-   Troublemaker
+   The History of the Future of Education Technology
 
 email: mail@audreywatters.com
 #blog logo
-logo: "/assets/images/aw_logo.jpg"
+logo: "/assets/images/hack_logo.jpg"
 # blog cover
-cover: "/assets/images/notredame2.jpg"
-covercredits: "https://www.flickr.com/photos/surreal_badger/15462092744/"
+cover: "/assets/images/pigeons.jpg"
+covercredits: "https://www.flickr.com/photos/emmanuelecontini/2863483684"
 
 name: 'Audrey Watters'
 author: 'Audrey Watters'
@@ -53,7 +53,7 @@ social:
     share_link:
 
   - icon: rss
-    url:  http://audreywatters.com/feed.xml
+    url:  http://hackeducation.com/feed.xml
     desc: Subscribe
     share_url:
     share_title:
