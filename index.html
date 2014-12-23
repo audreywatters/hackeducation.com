@@ -20,7 +20,6 @@ layout: default
               <time datetime="21 December 2014">29 December 2014</time>
   <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
             </div>
-            <h5>Subscribe</h5>
           <div>
         </article>
       
@@ -42,7 +41,7 @@ layout: default
               <time datetime="21 December 2014">4 November 2014</time>
   <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
             </div>
-               <h5>More Writing</h5>
+               <h5 class="index-headline featured"><span><a href="http://writing.hackeducation.com">More Writing</a></span></h5>
           <div>
         </article>
       
@@ -64,7 +63,7 @@ layout: default
               <time datetime="21 December 2014">18 November 2014</time>
   <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
             </div>
-               <h5>More Speaking</h5>
+               <h5 class="index-headline featured"><span><a href="http://speaking.hackeducation.com">More Speaking</a></span></h5>
           <div>
         </article>
       
@@ -86,7 +85,7 @@ layout: default
               <time datetime="21 December 2014">22 December 2014</time>
   <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
             </div>
-               <h5>More Research</h5>
+               <h5 class="index-headline featured"><span><a href="http://research.hackeducation.com">More Research</a></span></h5>
           <div>
         </article>
       
@@ -108,95 +107,30 @@ layout: default
               <time datetime="21 December 2014">1 December 2014</time>
   <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
             </div>
-               <h5>More Books</h5>
+               <h5 class="index-headline featured"><span><a href="http://audreywatters.com/books/"></a>More Books</a></span></h5>
           <div>
         </article>
       
     </div>
 
-    <h5 class="index-headline normal"><span>Regular</span></h5>
-    
+    <h5 class="index-headline normal"><span>Blog</span></h5>
+    {% endif %}
     
 <div class="cf frame">
-  
+  {% for post in paginator.posts %}
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
       <div class="article-item">
         <header class="post-header">
-          <h2 class="post-title" itemprop="name"><a href="/2014/12/21/week-of-12-15-2014" itemprop="url">My Week in Review</a></h2>
+          <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
         </header>
         <section class="post-excerpt" itemprop="description">
-          <p>Travel Nope. Kin&rsquo;s been on the road, but I&rsquo;m not going anywhere. Upcoming week: Hermosa Beach. Hack Education Writing Hack Education Weekly News&nbsp; Top Ed-Tech Trends of 2014: Data and Privacy&nbsp; Top Ed-Tech Trends of 2014: The Indie Web&nbsp; Top Ed-Tech Trends of 2014: Social Justice Top Ed-Tech Trends of...</p>
+          <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
         </section>
         <div class="post-meta">
-          <time datetime="21 December 2014">21 December 2014</time>
-<!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+          <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
         </div>
       <div>
     </article>
-  
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-      <div class="article-item">
-        <header class="post-header">
-          <h2 class="post-title" itemprop="name"><a href="/2014/12/21/frequently-asked-questions" itemprop="url">Frequently Asked Questions</a></h2>
-        </header>
-        <section class="post-excerpt" itemprop="description">
-          <p>Did you get my message? Maybe. But I&rsquo;m busy writing, and by that I don't mean busy writing emails. Refer to this FAQ for help answering your questions. Will you review my startup? No. Would you like to talk to the CEO of my company about his plans to revolutionize...</p>
-        </section>
-        <div class="post-meta">
-          <time datetime="21 December 2014">21 December 2014</time>
-<!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
-        </div>
-      <div>
-    </article>
-  
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-      <div class="article-item">
-        <header class="post-header">
-          <h2 class="post-title" itemprop="name"><a href="/2014/12/14/week-of-12-8-2014" itemprop="url">My Week in Review</a></h2>
-        </header>
-        <section class="post-excerpt" itemprop="description">
-          <p>Travel Nope (although Kin has been on the road). Upcoming week: Hermosa Beach. Hack Education Writing Hack Education Weekly News&nbsp; Hack Education Weekly Newsletter&nbsp; Top Ed-Tech Trends of 2014: MOOCs, Outsourcing, and Online Education Top Ed-Tech Trends of 2014: Competencies and Certificates&nbsp; Top Ed-Tech Trends of 2014: The Common Core...</p>
-        </section>
-        <div class="post-meta">
-          <time datetime="14 December 2014">14 December 2014</time>
-<!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
-        </div>
-      <div>
-    </article>
-  
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-      <div class="article-item">
-        <header class="post-header">
-          <h2 class="post-title" itemprop="name"><a href="/2014/12/07/week-of-12-1-2014" itemprop="url">My Week in Review</a></h2>
-        </header>
-        <section class="post-excerpt" itemprop="description">
-          <p>Travel (and Speaking) Nope. I was supposed to travel to DC briefly, but that didn&rsquo;t pan out. It was a bit of a strange week, weather-wise &ndash; lots of Los Angeles rain. And it was an awful week, world-wise. Upcoming week: Hermosa Beach. Hack Education Writing Hack Education Weekly News...</p>
-        </section>
-        <div class="post-meta">
-          <time datetime="07 December 2014">07 December 2014</time>
-<!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
-        </div>
-      <div>
-    </article>
-  
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-      <div class="article-item">
-        <header class="post-header">
-          <h2 class="post-title" itemprop="name"><a href="/2014/12/01/on-self-publishing-my-monsters" itemprop="url">On Self-Publishing My Monsters</a></h2>
-        </header>
-        <section class="post-excerpt" itemprop="description">
-          <p>I had a couple of really solid months of working on Teaching Machines, but when the Fall rolled around, and I looked at my traveling and speaking schedule, I knew that there was just no way I&rsquo;d finish it this year. That sucks because (somewhat reminiscent of the pressure to...</p>
-        </section>
-        <div class="post-meta">
-          <time datetime="01 December 2014">01 December 2014</time>
-<!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
-        </div>
-      <div>
-    </article>
-  
+  {% endfor %}
 </div>
-        	
-       </main>
-       
-      </div>
-    </div>
