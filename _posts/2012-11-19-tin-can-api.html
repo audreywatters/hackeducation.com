@@ -1,0 +1,30 @@
+---
+layout: post
+title: 'Learning Experiences: The Tin Can API'
+sourceurl: http://audreywatters.com/2012/11/19/tin-can-api/
+image: http://hackedu.s3.amazonaws.com/api-evangelist-site/blog/tincanapi.jpg
+---
+
+<p><img style="margin: 15px;" src="https://s3.amazonaws.com/hackedu/tincanapi.jpg" alt="" align="right" />Learning is not a product. It&rsquo;s a process.</p>
+<p>Nevertheless, educational policies, practices, and technologies often frame it as object, as content, as &ldquo;thing&rdquo; &mdash; as a noun, not a verb.</p>
+<p>How we conceptualize education and learning &mdash; which part of speech is it? do we focus on the subjects or the objects or the actions? &mdash; is an important consideration philosophically, I&rsquo;d argue. But the construction of statements &mdash; subject-verb-object &mdash; is important programmatically too. That is, our technologies have followed our philosophies, focusing mostly on the nouns (and mostly as objects, I&rsquo;d argue, even when the subject of a sentence&hellip;).&nbsp;</p>
+<p>Take this statement, for example:</p>
+<p><span style="font-family: 'courier';">Susie read Chapter 2.</span></p>
+<p>"Susie&rdquo; &mdash; her name, grade level, and enrollment details &mdash; fits in the Student Information System. &ldquo;Chapter 2&rdquo; &mdash; or whatever the &ldquo;object of study&rdquo; might be &mdash; is delivered by educational content providers &mdash; whether they&rsquo;re textbook publishers, test makers, study guides, or app developers.</p>
+<p>There&rsquo;s a verb in that sentence, sure, but up &rsquo;til now, &ldquo;actions&rdquo; haven&rsquo;t been the focus of LMSes, publishers, and the like. (Although in the case of&nbsp;<a href="http://en.wikipedia.org/wiki/Learning_object">Learning Objects</a>, we've tried to tie assessment and "outcomes" in to "objects.").</p>
+<p>The <a href="http://tincanapi.com/">Tin Can API</a> &mdash; currently being shepherded by <a href="http://www.adlnet.gov/">ADL</a> the keepers of the <a href="http://scorm.com/">SCORM</a> (the Sharable Content Object Reference Model) project &mdash; hopes to provide education technologies with more flexibility to account for the actions and processes and experiences, by instrumentalizing that entire statement: subject-<em>verb</em>-object.</p>
+<p><span style="font-family: 'courier';">Susie likes algebra.</span></p>
+<p>I&rsquo;ve chosen &ldquo;like&rdquo; as the verb in that sentence on purpose. Because thanks in part to Facebook, we&rsquo;re becoming more accustomed to thinking about our interactions with online content. I don&rsquo;t the verb is terribly nuanced or refined here &mdash; what does Facebook liking even mean? (Or rather, what does &ldquo;like&rdquo; mean to the subject. It&rsquo;s pretty clear what it means to Facebook and to advertisers.)</p>
+<p>Last year, the social networking giant started to roll out more verbs &mdash; want, watch, read, listen &mdash; adding to the ways in which Facebook mediates (monetizes) the relationship between Internet users and content. &ldquo;We&rsquo;re going to make it so you can connect to anything in any way you want,&rdquo; said Mark Zuckerberg at his <a href="https://f8.facebook.com/">f8 Developers</a> conference. It is all part of &ldquo;building this language for how people connect,&rdquo; he said.</p>
+<p>Tin Can API could provide the (programmatic) language for how people connect to learning.</p>
+<script src="https://gist.github.com/4113077.js?file=tincanapi"></script>
+<p>&nbsp;</p>
+<h2>An Experience API</h2>
+<p>I don&rsquo;t mean to paint the Tin Can project in an unfavorable light by comparing it to Facebook. Unlike Facebook&rsquo;s so-called &ldquo;Open Graph,&rdquo; the Tin Can API is open source; it is community- not company-owned. (And unlike ADL&rsquo;s SCORM efforts, it hopes too to be community-driven.)</p>
+<p>But I think the question of language is important here, because even though the inclusion of verbs does crack open the ways in which we can represent educational experiences programmatically, there are still limitations &mdash; linguistic and conceptual &mdash; with the simple subject-verb-object sentence. As <a href="http://www.theatlantic.com/technology/archive/2011/09/the-rise-of-the-zuckerverb-the-new-language-of-facebook/245897/">Ben Zimmer argues</a> in his response to the new Facebook verbs,</p>
+<blockquote>
+<p><em>&ldquo;language is being recast in a more profound way, turned into a utilitarian tool for &lsquo;expressing&rsquo; relationships to objects in the world in a remarkably unexpressive fashion. Verbs are for doing things, things that are then announced in uncomplicated declarations. Sentences become mere instruments for sharing easy-to-digest morsels of personal information.&rdquo;</em></p>
+</blockquote>
+<p>There are some powerful and some problematic implications of instrumentalizing language <em>and</em> learning this way.</p>
+<p>I&rsquo;m intrigued by the Tin Can API for a number of reasons: It is open and distributed. It supports interoperability (unlike Facebook, into which all the Web could eventually be subsumed). It's a Web API. (I've written previously about the <a href="/2012/04/13/education-api/">importance of education APIs</a>, and I think the Tin Can API could be very useful tool here, as I state above, expands our focus beyond content, objects, and nouns.)</p>
+<p>And unlike SCORM, which was an attempt to standardize learning materials across various software and learning management systems, the Tin Can API doesn&rsquo;t tie learners to a particular device, or to particular content, or even to an LMS at all. Indeed (and this is what excited me the most) it could be an important piece of a creating a <em>personal</em> data locker, where learners can track their own experiences and control their own learning data.</p>
