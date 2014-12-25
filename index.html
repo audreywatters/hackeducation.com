@@ -2,7 +2,8 @@
 layout: default
 ---
 <main class="content" role="main">      	
-      		    
+      	
+        	    
     <h5 class="index-headline featured"><span>Latest News</span></h5>
 
     <div class="container featured">
@@ -108,60 +109,25 @@ layout: default
       
     </div>
 
-    {% if site.tags.featured %}
-    <h5 class="index-headline featured"><span>Featured</span></h5>
+
+            <h5 class="index-headline featured"><span>Latest Blog Post</span></h5>
 
     <div class="container featured">
-      {% for post in site.tags.featured %}
+      
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
             <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+              <h2 class="post-title" itemprop="name"><a href="http://hackeducation.com/2014/12/22/top-ed-tech-trends-2014/" itemprop="url">Top 10 Ed-Tech Trends of 2014</a></h2>
             </header>
             <section class="post-excerpt" itemprop="description">
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+              <p>My year-end review of all things education technology. (A mammoth undertaking! Support my work!) What happened in 2014: MOOCs, money, politics, privatization, outsourcing, privacy violations, sexism, death threats, community-building, bullshit, resistance to the bullshit, and me running all over the world trying to warn folks. You've been warned....</p>
             </section>
             <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-            </div>
+              <time datetime="22 December 2014">22 December 2014</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+               <p style="text-align:right"><a href="http://hackeducation.com/blog/">MORE BLOG POSTS</a></p>
           <div>
         </article>
-      {% endfor %}
+      
     </div>
 
-    <h5 class="index-headline normal"><span>Blog</span></h5>
-    {% endif %}
-    
-<div class="cf frame">
-  {% for post in paginator.posts %}
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-      <div class="article-item">
-        <header class="post-header">
-          <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-        </header>
-        <section class="post-excerpt" itemprop="description">
-          <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-        </section>
-        <div class="post-meta">
-          <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-        </div>
-      <div>
-    </article>
-  {% endfor %}
-</div>
-
-<nav class="pagination" role="navigation">
-  {% if paginator.next_page %}
-    <a class="newer-posts" href="/blog/page{{paginator.next_page}}">&larr; Older posts</a>
-  {% endif %}
-  <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="older-posts" href="/">Newer posts &rarr;</a>
-    {% else %}
-      <a class="older-posts" href="/blog/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-    {% endif %}
-  {% endif %}
-</nav>
