@@ -7,6 +7,8 @@ title: "Hack Education"
 description: > # this means to ignore newlines until "email:"
    The History of the Future of Education Technology
 
+url: http://hackeducation.com
+
 email: mail@audreywatters.com
 #blog logo
 logo: "/assets/images/hack_logo.jpg"
