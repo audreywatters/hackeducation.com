@@ -1,4 +1,4 @@
 hackeducation.com
 =================
 
-Site (Jekyll)
+Site Redesign December 2014 (Jekyll)
