@@ -40,11 +40,11 @@
 <!--Open Graph Stuff Take 2-->  
 
 
-{% if page.url %}
+{% if post.url %}
   <!-- Blog Post -->
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+  <meta property="og:title" content="{{ post.title }}" />
+  <meta property="og:url" content="{{ site.url }}{{ post.url }}" />
+  <meta property="og:image" content="{{ site.url }}{{ post.image }}" />
 {% else %}
   <!-- Page -->
   <meta property="og:title" content="{{ site.title }}" />
