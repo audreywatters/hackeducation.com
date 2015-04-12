@@ -37,4 +37,20 @@
   <link rel="me" href="https://twitter.com/thewattbot" />
   <link rel="me" href="https://twitter.com/hackeducation" />
 
+<!--Open Graph Stuff Take 2-->  
+
+
+{% if post.url %}
+  <!-- Blog Post -->
+  <meta property="og:title" content="{{ post.title }}" />
+  <meta property="og:url" content="{{ post.url }}" />
+  <meta property="og:image" content="{{ post.image }}" />
+{% else %}
+  <!-- Page -->
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:image" content="{{ page.image }}" />
+{% endif %}    
+
+
 </head>
