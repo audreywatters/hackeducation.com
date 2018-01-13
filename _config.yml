@@ -53,13 +53,6 @@ social:
     share_title:
     share_link:
 
- # - icon:  google-plus
- #   url:   
- #   desc:  
- #   share_url:
- #   share_title:
- #   share_link:
-
   - icon: rss
     url:  http://hackeducation.com/feed.xml
     desc: Subscribe
